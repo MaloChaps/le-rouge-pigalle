@@ -470,12 +470,16 @@ body{
 	width: 25%;
 }
 
-.hero-section img:nth-child(3){
+.hero-section div{
 	position: absolute;
 	text-align: center;
 	bottom: 20px;
-	width: 2%;
+	width: 100%;
 	margin: auto;
+}
+
+.hero-section div img:last-child{
+	width: 2%;
 }
 
 

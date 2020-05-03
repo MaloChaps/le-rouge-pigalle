@@ -182,8 +182,12 @@
     width: 50%;
 }
 
-.hero-section img:nth-child(3) {
-    bottom: 130px;
+.hero-section div{
+    bottom: 120px;
+    width: 100%;
+}
+
+.hero-section div img:last-child{
     width: 5%;
 }
 
