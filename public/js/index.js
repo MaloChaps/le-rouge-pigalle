@@ -1,7 +1,3 @@
-$(window).load(function() {
-     $(".loader").fadeOut("1000"); 
- });
-
 $(document).ready(function(){
                 $('#nav-open').click(function(){
                     $('.burger-menu').css('display', 'none');
