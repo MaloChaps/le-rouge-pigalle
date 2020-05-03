@@ -84,24 +84,54 @@
 	display: none;
 }
 
+.langue-header{
+    padding: 100px 65px 0px 0px;
+}
+
 .langue-header a{
-    font-size: 40px;
+    font-size: 45px;
     margin-left: 25px;
     line-height: 0px;
 }
 
+.burger-menu{
+        padding: 100px 0px 0px 65px;
+}
+
 .burger-menu img{
-    width: 32%;
+    width: 40%;
+
 }
 
 .nav-open{
-    display: flex;
+    display: none;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background: grey;
     position: fixed;
     overflow-y: hidden;
 
+}
+
+
+.nav-open-content{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-open-content img{
+    width: 7%
+}
+
+.nav-open-content div a{
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+.nav-open-content{
+    padding: 100px 65px 0px 65px;
+    width: 100%;
 }
 
 

@@ -229,13 +229,22 @@ body{
 	display: none;
 }
 
-.nav-open-content{
+.nav-open-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
 }
-.nav-open-content a{
+
+.nav-open-content div{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+
+.nav-open-content div a{
 	font-family: Poppins-Regular;
 	font-style: normal;
 	font-weight: 500;
