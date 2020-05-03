@@ -13,6 +13,30 @@ $(document).ready(function(){
                     $('.burger-menu').css('display', 'flex');
                 });
 
+                $('#nav-open-mobile').click(function(){
+                    $('.nav-mobile-close-mobile').fadeOut('1000');
+                    $('.nav-open-mobile').fadeIn('1000');
+                });
+
+                 $('#nav-close-mobile').click(function(){
+                    $('.nav-open-mobile').fadeOut('1000');
+                    $('.nav-mobile-close-mobile').fadeIn('1000');
+                });
+
+                //  $('#nav-open-mobile').click(function(){
+                //     $('.nav-mobile-close-mobile').css('display', 'none');
+                //     $('.nav-open-mobile').css('display', 'flex');
+                // });
+
+                // $('#nav-close-mobile').click(function(){
+                //     $('.nav-open-mobile').css('display', 'none');
+                //     $('.nav-mobile-close-mobile').css('display', 'flex');
+                // });
+
+
+                
+                
+
             });
 
 // parallax

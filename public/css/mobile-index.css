@@ -69,71 +69,65 @@
 
 
 /*header //////////////////////////////////// header*/
-.header-section {
+.header-section{
+    display: none;
+}
+
+.header-section-mobile{
+    display: flex;
     margin: 0px 0px 0px 0px;
-    
+    padding: 0px;
+   
+}
+
+.burger-menu{   
+    width: 30%;
+}
+
+.burger-menu img{
+    width: 40%;
+}
+
+.langue-header a{
+    font-size: 50px;
+    margin: 0px 0px 0px 30px
+}
+
+.nav-mobile-close-mobile{
     position: absolute;
     z-index: 99;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 100px 65px 0px 65px;
 }
 
-.social-header{
-	display: none;
-}
-
-.langue-header{
-    padding: 100px 65px 0px 0px;
-}
-
-.langue-header a{
-    font-size: 45px;
-    margin-left: 25px;
-    line-height: 0px;
-}
-
-.burger-menu{
-        padding: 100px 0px 0px 65px;
-}
-
-.burger-menu img{
-    width: 40%;
-
-}
-
-.nav-open{
+.nav-open-mobile{
     display: none;
     width: 100%;
-    height: 110vh;
-    background: grey;
-    position: fixed;
-    overflow-y: hidden;
-
+    height: 100vh;
+    padding: 100px 65px 0px 65px;
+    z-index: 99;
+    background: #151515;
 }
-
 
 .nav-open-content{
-    height: 90vh;
+    width: 90%;
+    height: 85vh;
     display: flex;
     justify-content: space-between;
-}
-
-.nav-open-content img{
-    width: 7%
 }
 
 .nav-open-content div a{
     font-size: 50px;
     margin-bottom: 80px;
+
 }
 
-.nav-open-content{
-    padding: 100px 65px 0px 65px;
-    width: 100%;
+.nav-open-content img{
+    width: 8%;
 }
-
 
 /*hero ///////////////////////////// hero hole*/
 

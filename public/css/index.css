@@ -203,6 +203,10 @@ body{
 	display: none;
 }
 
+.header-section-mobile{
+	display: none;
+}
+
 .header-section{
 	margin: 40px 65px 0px 65px;
 	position: absolute;
@@ -282,11 +286,11 @@ body{
 }
 
 .langue-header a{
-	margin: 0px 8px 0px 0px;
+	margin: 0px 15px 0px 0px;
 	color: white;
 	text-decoration: none;
 	font-family: Poppins-Regular;
-	font-size: 16px;
+	font-size: 17px;
 	text-transform: uppercase;
 }
 
