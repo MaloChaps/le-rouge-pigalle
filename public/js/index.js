@@ -133,6 +133,14 @@ sr.reveal('footer', {
 });
 
 
+sr.reveal('.audit-section', {
+     delay: 0.2,
+    duration: 2000,
+    distance: "0px",
+    origin: "bottom"
+});
+
+
 
 
 
