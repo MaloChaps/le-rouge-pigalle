@@ -28,7 +28,7 @@ const parallax = document.querySelectorAll("#parallax");
             let offset = window.pageYOffset;
             parallax.forEach(function(prllx, i) {
                 console.log("Parallax " + i + ": " + prllx.offsetTop + " / Window: " + offset);
-                prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.8 + "px";
+                prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.3 + "px";
             })
         });
 
