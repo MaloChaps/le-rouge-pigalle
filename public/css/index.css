@@ -328,6 +328,7 @@ body{
 
 .nav-open{
 	display: none;
+	width: 30%;
 }
 
 .nav-open-content {
@@ -370,11 +371,15 @@ body{
 	margin-bottom: 25px;
 	text-decoration: none;
 	color: #FFFFFF;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 }
 
 .nav-open-content div a:hover{
 	color: black;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 }
 
@@ -580,6 +585,10 @@ body{
 	        align-items: center;
 }
 
+.full-video-content i{
+	display: none;
+}
+
 .full-video-content video{
 	overflow: hidden;
 	min-width: 100%;
@@ -702,9 +711,35 @@ body{
 
 /*audit /////////////////////////////////////audit*/
 .audit-section{
-	
+	margin-bottom: 50px;
 }
 
+.audit-content{
+	position: relative;
+}
+
+.audit-section article a{
+	position: absolute;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	height: 100%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.audit-parallax{
+	width: 100%;
+	height: 55vh;
+	background-image: url('../img/audit/audit-img.png');
+	background-size: cover;
+}
 
 /*red is yours /////////////////////////////////////red is yours*/
 

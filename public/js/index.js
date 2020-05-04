@@ -1,12 +1,12 @@
 $(document).ready(function(){
                 $('#nav-open').click(function(){
-                    $('.burger-menu').css('display', 'none');
+                    $('.nav-burger').css('display', 'none');
                     $('.nav-open').css('display', 'flex');
                 });
 
                 $('#nav-close').click(function(){
                     $('.nav-open').css('display', 'none');
-                    $('.burger-menu').css('display', 'flex');
+                    $('.nav-burger').css('display', 'flex');
                 });
 
                 $('#nav-open-mobile').click(function(){
@@ -31,6 +31,9 @@ const parallax = document.querySelectorAll("#parallax");
                 prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.8 + "px";
             })
         });
+
+        
+
 
 
 // scroll reveal anime

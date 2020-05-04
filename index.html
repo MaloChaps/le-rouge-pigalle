@@ -23,7 +23,7 @@
 				<div class="burger-menu">
 					<img id="nav-open" src="public/img/component/burger.svg" alt="menu burger">
 				</div>
-
+			</div>
 				<div class="nav-open">
 					<div class="nav-open-content">
 						<img id="nav-close" src="public/img/component/cross.svg" alt="fermer menu">
@@ -32,9 +32,10 @@
 						<a href="#">Friends & family</a>
 						<a href="#">Je t’aime party</a>
 						<a href="#">Press</a>
-						<a href="#">Contact</a></div>
+						<a href="#">Contact</a>
+						</div>
 					</div>
-				</div>
+			
 			</div>
 
 			<div class="social-header">
@@ -97,7 +98,8 @@
 		<div class="video-section">
 			<div class="full-video">
 				<div class="full-video-content">
-					<video autoplay="" loop="" muted="">
+					<i id="play-btn"  onclick="playVid()" class="fas fa-play"></i>
+					<video id="video-rouge" autoplay="" loop="" muted="">
 						<source src="public/videos/video-rouge.mp4" type="video/mp4">
 						<source src="public/videos/video-rouge.webm" type="video/webm">
 					</video>
@@ -161,8 +163,7 @@
 			</section>
 		</div>
 
-		<div class="audit-section">
-		</div>
+		
 
 		<div class="red-section">
 			<h2 class="h1">Red is<br> your's.</h2>
@@ -174,6 +175,19 @@
 					<p class="img-title">“Red and sulphurous night in the heart of Pigalle”</p>
 				</article>
 					<div class="red-parallax" id="parallax"></div>
+			</section>
+		</div>
+
+		<div class="audit-section">
+			<h2 id="title-upcoming" class="h1">Audit &<br>collaboration.</h2>
+			<div id="line-upcoming" class="full-line"></div>
+
+			<section class="audit-content">
+				<article>
+					<a href="mailto:@laposte.net"><button class="button-classic">Contact</button></a>
+				</article>
+					<div class="audit-parallax" id="parallax"></div>
+				
 			</section>
 		</div>
 
@@ -314,7 +328,19 @@
 	<script type="text/javascript">
 		$(window).load(function() {
      $(".loader").fadeOut("1000"); 
- });
+ 	});
+		var vid = document.getElementById("video-rouge"); 
+		var playBtn = document.getElementById("play-btn"); 
+
+		function playVid() { 
+		  vid.play();
+		  playBtn.style.display = "none";
+		} 
+
+		function pauseVid() { 
+		  vid.pause(); 
+		} 
+
 	</script>
 </body>
 </html>
