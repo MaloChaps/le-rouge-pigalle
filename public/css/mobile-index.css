@@ -176,7 +176,7 @@
 /*hero ///////////////////////////// hero hole*/
 
 .upcoming-section {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
  }
 
 .hero-section img:nth-child(1) {
@@ -184,7 +184,7 @@
 }
 
 .hero-section div{
-    bottom: 120px;
+    bottom: 250px;
     width: 100%;
 }
 
@@ -260,7 +260,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
   .info-cover {
     width: 100%;
@@ -299,7 +299,7 @@
 
  /*jetaime  ////////////////////////////////jetaime*/
 .love-section{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
  .love-parallax{
@@ -313,7 +313,7 @@
 
   /*red-is yours  ////////////////////////////////red-is yours*/
 .red-section{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .red-parallax{
@@ -354,7 +354,7 @@
 }
 /*footer //////////////////////////////// footer */
 .footer-section{
-    height: 95vh;
+    height: 80vh;
 }
 
 .footer-content {
