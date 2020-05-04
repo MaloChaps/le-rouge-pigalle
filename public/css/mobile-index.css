@@ -333,6 +333,9 @@
  }
 
  /*audit section////////////////////////////////////////audit*/
+ .audit-section{
+    margin-bottom: 100px;
+ }
  .audit-parallax{
     background-image: url('../img/audit/audit-mobile.png');
 }
