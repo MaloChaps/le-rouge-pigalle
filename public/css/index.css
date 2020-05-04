@@ -511,7 +511,7 @@ body{
 
 .upcoming-section section article{
  	width: 45%;
- 	margin-bottom: 25px;
+ 	margin-bottom: 30px;
 }
 
 .btn-upcoming{
@@ -935,17 +935,8 @@ body{
 .copyright-footer{
 	position: absolute;
 	bottom: 25px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	width: 93.5%;
-
+	width: 100%;
+	text-align: center;
 	font-family: Poppins-Regular;
 	font-style: normal;
 	font-weight: normal;

@@ -28,6 +28,7 @@
 
 .paragraphe-2{
     font-size: 40px;
+    line-height: 155%;
 }
 
 .cta{
@@ -103,7 +104,7 @@
 }
 
 .burger-menu-mobile img{
-    width: 40%;
+    width: 30%;
 }
 
 .langue-header-mobile{
@@ -118,7 +119,7 @@
 
 .langue-header-mobile a{
     font-family: Poppins-Regular;
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
     color: white;
     margin: 0px 0px 0px 30px;
@@ -197,13 +198,14 @@
 
 .upcoming-section section article {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
-.upcoming-section section div:nth-child(3) a img {
-    margin-left: 50px;
+.btn-upcoming a:nth-child(2) img{
     width: 20%;
 }
+
+
 
 
 /*video content ////////////////////////////////video*/
@@ -221,7 +223,7 @@
 .full-video-content {
     width: 100%;
     height: 45vh;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
  }
 
  .info-video {
@@ -262,7 +264,7 @@
   }
   .info-cover {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .cover-content{
@@ -290,8 +292,8 @@
 }
 
 .img-cover{
-    height: 650px;
-    width: 650px;
+    height: 550px;
+    width: 550px;
 }
 
 
@@ -332,7 +334,7 @@
 
 .friends-title {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .friends-title p{
