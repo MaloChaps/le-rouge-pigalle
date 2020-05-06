@@ -1,0 +1,198 @@
+/*font*/
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url('../../public/font/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Neue-Bold";
+	src: url('../../public/font/neue/NeueHaasGroteskDisplay-Bold.otf');
+}
+
+@font-face {
+	font-family: "Neue-Medium";
+	src: url('../../public/font/neue/NeueHaasGroteskDisplay-Medium.otf');
+}
+
+html *{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body{
+	background: black;
+	padding: 10px 65px 0px 65px;
+}
+
+header{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+header img{
+	width: 8%;
+}
+
+/*font asset*/
+.h1{
+	font-family: Neue-Bold;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 90%;
+	/* or 81px */
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+/*hello section*/
+
+.hello-section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.line{
+	width: 100%;
+	margin: 50px 0px 50px 0px;
+	border-bottom: 1px white solid;
+}
+
+.box-content{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box{
+	width: 350px;
+height: 244px;
+
+background: #C4C4C4;
+border-radius: 13px;
+	margin: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-family: Neue-Bold;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 90%;
+	/* or 81px */
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border: solid black 5px;
+	transition: 0.4s ease;
+
+}
+
+.box:hover{
+	border: solid white 5px;
+	transition: 0.4s ease;
+}
+
+.box:nth-child(1){
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/img/img-admin.jpeg), #C4C4C4;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box:nth-child(2){
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/img/friends/friends.png), #C4C4C4;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box:nth-child(3){
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/img/covers/cover1.png), #C4C4C4;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box:nth-child(4){
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/img/img-admin2.jpeg), #C4C4C4;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box:nth-child(5){
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/img/img-admin3.png), #C4C4C4;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+.box i{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
+
+.box-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    width: 95%;
+    height: 634px;
+    background: #C4C4C4;
+    border-radius: 13px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Neue-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 90%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: solid black 5px;
+    transition: 0.4s ease;
+}
+
+.h1 {
+    font-family: Neue-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+header img {
+    width: 28%;
+}
+
+
+}
