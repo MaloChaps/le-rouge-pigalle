@@ -21,7 +21,7 @@ while ($donnees = $reponse->fetch())
 	</header>
 	
 	<div class="hello-section">
-		<p class="h1">Upcoming event</p>
+		<p class="h1">Evénment à venir</p>
 		<div class="line"></div>
 	</div>
 	<main>
@@ -62,8 +62,8 @@ while ($donnees = $reponse->fetch())
 
 			$update = $bdd->prepare('UPDATE upcoming SET lien = ?, event = ? WHERE id = ?');
 			$update->execute(array($lien, $event, $id));
-			echo '<p style="color: green">Modification effectuée</p>';
-			// header("Location: upcoming.php");
+			// echo '<p style="color: green">Modification effectuée</p>';
+			header("Location: upcoming-FR.php");
 
 		}else{echo "Erreur";}
 	}

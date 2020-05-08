@@ -28,11 +28,11 @@
 					<div class="nav-open-content">
 						<img id="nav-close" src="public/img/component/cross.svg" alt="fermer menu">
 						<div>
-						<a href="#">Upcoming event</a>
-						<a href="#">Friends & family</a>
-						<a href="#">Je t’aime party</a>
+						<a href="#upcoming">Upcoming event</a>
+						<a href="#friends">Friends & family</a>
+						<a href="#jetaime">Je t’aime party</a>
 						<a href="#">Press</a>
-						<a href="#">Contact</a>
+						<a href="mailto:paul.sery@laposte.net">Contact</a>
 						</div>
 					</div>
 			
@@ -65,11 +65,11 @@
 					<div class="nav-open-content-mobile">
 						<img id="nav-close-mobile" src="public/img/component/cross.svg" alt="fermer le menu du rouge">
 						<div>
-						<a href="#">Upcoming event</a>
-						<a href="#">Friends & family</a>
-						<a href="#">Je t’aime party</a>
+						<a id="upcoming-click" href="#upcoming">Upcoming event</a>
+						<a id="friends-click" href="#friends">Friends & family</a>
+						<a id="jetaime-click" href="#jetaime">Je t’aime party</a>
 						<a href="#">Press</a>
-						<a href="#">Contact</a></div>
+						<a href="mailto:paul.sery@laposte.net" target="_blanck">Contact</a>
 					</div>
 				</div>
 	</header>
@@ -82,7 +82,7 @@
 
 	<div class="landing-section">
 
-		<div class="upcoming-section">
+		<div class="upcoming-section" id="upcoming">
 			<?php
 			include('admin/connexion.php');
 			$reponse = $bdd->query('SELECT * FROM upcoming ORDER BY id DESC LIMIT 1');
@@ -100,7 +100,7 @@
 					<a href="<?php echo $donnees['lien'] ?>" target="_blanck" class="cta">event <img src="public/img/component/arrow-line.svg" alt="information suivante"></a>
 				</div>
 			</section>
-		<?php }?>
+			<?php }?>
 		</div>
 
 		<div class="video-section">
@@ -161,7 +161,7 @@
 			</section>
 		</div>
 
-		<div class="love-section">
+		<div class="love-section" id="jetaime">
 			<h2 class="h1">Je t'aime<br> party.</h2>
 			<div class="full-line"></div>
 
@@ -199,7 +199,7 @@
 			</section>
 		</div>
 
-		<div class="friends-section">
+		<div class="friends-section" id="friends">
 			<div class="friends-title">
 				<p class="h1">friends <br>and family.</p>
 				<div>
@@ -210,7 +210,7 @@
 			<section class="friends-content">
 				<?php
 			include('admin/connexion.php');
-			$reponse = $bdd->query('SELECT * FROM box_ ORDER BY id DESC LIMIT 1');
+			$reponse = $bdd->query('SELECT * FROM friends ORDER BY id DESC LIMIT 1');
 			while ($donnees = $reponse->fetch())
 			{?>
 				<article>

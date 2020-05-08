@@ -20,6 +20,26 @@ $(document).ready(function(){
                 });
                 
 
+                $('#upcoming-click').click(function(){
+                    $('.nav-open-mobile').fadeOut('1000');
+                    $('.nav-mobile-close-mobile').fadeIn('1000');
+                });
+
+                 $('#friends-click').click(function(){
+                    $('.nav-open-mobile').fadeOut('1000');
+                    $('.nav-mobile-close-mobile').fadeIn('1000');
+                });
+
+                 $('#jetaime-click').click(function(){
+                    $('.nav-open-mobile').fadeOut('1000');
+                    $('.nav-mobile-close-mobile').fadeIn('1000');
+                });
+
+
+
+                
+                
+
             });
 
 // parallax

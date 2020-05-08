@@ -10,6 +10,7 @@ while ($donnees = $reponse->fetch())
 	<meta charset="utf-8">
 	<title>Upcoming Event - Admin</title>
 	<link rel="stylesheet" type="text/css" href="../css/upcoming.css">	
+	
 </head>
 
 <body>
@@ -62,7 +63,8 @@ while ($donnees = $reponse->fetch())
 
 			$update = $bdd->prepare('UPDATE upcoming SET lien = ?, event = ? WHERE id = ?');
 			$update->execute(array($lien, $event, $id));
-			echo '<p style="color: green">Modification effectuée</p>';
+			echo '<p style="color: green">Modifications effectuées</p>';
+			// header("Location: upcoming.php");
 
 		}else{echo "Erreur";}
 	}

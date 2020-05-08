@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 include('../connexion.php');
-$reponse = $bdd->query('SELECT * FROM box_ ORDER BY id DESC LIMIT 1');
+$reponse = $bdd->query('SELECT * FROM friends ORDER BY id DESC LIMIT 1');
 while ($donnees = $reponse->fetch()){
 ?>
 
@@ -103,7 +103,7 @@ while ($donnees = $reponse->fetch()){
 
 
 
-			$update = $bdd->prepare('UPDATE box_ SET 
+			$update = $bdd->prepare('UPDATE friends SET 
 				titre1 = ?, 
 				text1 = ?, 
 				titre2 = ?, 
@@ -112,7 +112,7 @@ while ($donnees = $reponse->fetch()){
 				text3 = ?, 
 				titre4 = ?, 
 				text4 = ?
-				WHERE id = ?');
+				WHERE id = 1');
 			$update->execute(array(
 				$titre1,
 				 $text1,
@@ -121,14 +121,10 @@ while ($donnees = $reponse->fetch()){
 				 $titre3,
 				 $text3,
 				 $titre4,
-				 $text4,
-				 $id));
+				 $text4));
 
-
-
-
-			echo '<p style="color: green">Modification effectuée</p>';
-			// header("Location: upcoming.php");
+			echo '<p style="color: green">Modifications effectuées</p>';
+			// header("Location: friends.php");
 	}
 	?>
 	
