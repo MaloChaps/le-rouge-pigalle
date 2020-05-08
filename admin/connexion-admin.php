@@ -1,6 +1,3 @@
-<?php 
-include('../connexion.php');
- ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +5,55 @@ include('../connexion.php');
 	<title>Connexion - Le rouge pigalle</title>
 </head>
 <body>
+	
+	<?php include('connexion.php');?>
+	<form method="post" action="">
+		<label>mail</label>
+		<input type="text" name="mail" placeholder="votre mail" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>"><br>
+
+		<label>mot de passe</label>
+		<input type="password" name="mdp" placeholder="votre mot de passe">
+
+		<input class="submit" type="submit" name="envoyer">
+
+	</form>
+	
+
+	<?php 
+
+	if(!empty($_POST) && !empty($_POST['mail']) && !empty($_POST['mdp'])){
+	
+
+		$req = $bdd->prepare('SELECT * FROM membres WHERE mail = :mail');
+		$req->execute(array('mail' => $_POST['mail']));
+		$resultat = $req->fetch();
+
+		// Comparaison du pass envoyé via le formulaire avec la base
+		$isPasswordCorrect = password_verify($_POST['mdp'], $resultat['mdp']);
+
+		if (!$resultat)
+		{
+		    echo 'Mauvais identifiant ou mot de passe !';
+		}
+		else
+		{
+		    if ($isPasswordCorrect) {
+		        session_start();
+		        $_SESSION['id'] = $resultat['id'];
+		        $_SESSION['mail'] = $resultat['mail'];
+		        $_SESSION['nom'] = $resultat['nom'];
+		         echo '<script language="Javascript"> document.location.href="index.php";</script>';
+		       
+		    }
+		    else {
+		        echo '<p class="error" >Mauvais identifiant ou mot de passe !</p>';
+		    }
+		}
+
+	}
+	?>
+
+	
 	<style type="text/css">
 		/*font*/
 		@font-face {
@@ -121,52 +167,5 @@ include('../connexion.php');
 
 		}
 	</style>
-
-	<form method="post" action="">
-		<label>mail</label>
-		<input type="text" name="mail" placeholder="votre mail" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>"><br>
-
-		<label>mot de passe</label>
-		<input type="password" name="mdp" placeholder="votre mot de passe">
-
-		<input class="submit" type="submit" name="envoyer">
-
-	</form>
-	
-
-	<?php 
-
-	if(!empty($_POST) && !empty($_POST['mail']) && !empty($_POST['mdp'])){
-	
-
-		$req = $bdd->prepare('SELECT * FROM membres WHERE mail = :mail');
-		$req->execute(array('mail' => $_POST['mail']));
-		$resultat = $req->fetch();
-
-		// Comparaison du pass envoyé via le formulaire avec la base
-		$isPasswordCorrect = password_verify($_POST['mdp'], $resultat['mdp']);
-
-		if (!$resultat)
-		{
-		    echo 'Mauvais identifiant ou mot de passe !';
-		}
-		else
-		{
-		    if ($isPasswordCorrect) {
-		        session_start();
-		        $_SESSION['id'] = $resultat['id'];
-		        $_SESSION['mail'] = $resultat['mail'];
-		        $_SESSION['nom'] = $resultat['nom'];
-		        header("Location: index.php");
-		       
-		    }
-		    else {
-		        echo '<p class="error" >Mauvais identifiant ou mot de passe !</p>';
-		    }
-		}
-
-	}
-	?>
-
 </body>
 </html>

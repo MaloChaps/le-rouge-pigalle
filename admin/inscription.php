@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include('../connexion.php');
+include('connexion.php');
 if (isset($_SESSION['id'])) { ?>
 <!DOCTYPE html>
 <html>
@@ -27,7 +27,7 @@ if (isset($_SESSION['id'])) { ?>
 		<input type="submit" name="envoyer" value="envoyer" placeholder="Go !">
 		
 	</form>
-	<?php }else{header("Location: ../index.php");}?>
+	<?php }else{header("Location: index.php");}?>
 	<?php if(isset($message)) {
 		echo $message;
 	} ?>

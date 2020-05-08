@@ -1,7 +1,6 @@
-<?php
-session_start(); 
-include('../connexion.php');
-?>
+<?php session_start(); 
+include('connexion.php');
+if (isset($_SESSION['id'])) { ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +10,7 @@ include('../connexion.php');
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>	
-	<?php if (isset($_SESSION['id'])) { ?>
+	
 
 	
 	<header>
@@ -34,7 +33,7 @@ include('../connexion.php');
 		<a href="deconnexion.php" class="box"><i class="fas fa-sign-in-alt"></i>deconnexion</a>
 	</div>
 
-	<?php }else{header("Location: connexion-admin.php");}?>
+	<?php }else{echo '<script language="Javascript"> document.location.href="connexion-admin.php";</script>';}?>
 
 	
 
