@@ -138,6 +138,12 @@ border-radius: 13px;
 	background-repeat: no-repeat;
 }
 
+.box:nth-child(6){
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/img/img-admin.jpeg), #C4C4C4;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 
 .box i{
@@ -194,5 +200,16 @@ header img {
     width: 28%;
 }
 
+
+.line {
+    width: 100%;
+    margin: 50px 0px 50px 0px;
+    border-bottom: 2px white solid;
+}
+
+.box i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
 
 }

@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 include('../connexion.php');
-$reponse = $bdd->query('SELECT * FROM upcoming ORDER BY id DESC LIMIT 1');
+$reponse = $bdd->query('SELECT * FROM upcoming_fr ORDER BY id DESC LIMIT 1');
 while ($donnees = $reponse->fetch())
 {?>
 <!DOCTYPE html>
@@ -63,6 +63,7 @@ while ($donnees = $reponse->fetch())
 			$update = $bdd->prepare('UPDATE upcoming SET lien = ?, event = ? WHERE id = ?');
 			$update->execute(array($lien, $event, $id));
 			echo '<p style="color: green">Modification effectuée</p>';
+			// header("Location: upcoming.php");
 
 		}else{echo "Erreur";}
 	}

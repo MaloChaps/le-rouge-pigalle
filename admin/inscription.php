@@ -1,7 +1,8 @@
 <?php 
+session_start(); 
 $bdd = new PDO('mysql:host=localhost;dbname=lerouge;charset=utf8', 'root', '');
 // $bdd = new PDO('mysql:host=kbworldwnvmalo.mysql.db;dbname=kbworldwnvmalo;charset=utf8', 'kbworldwnvmalo', 'Arcoi600');
- ?>
+if (isset($_SESSION['id'])) { ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +28,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=lerouge;charset=utf8', 'root', '');
 		<input type="submit" name="envoyer" value="envoyer" placeholder="Go !">
 		
 	</form>
-
+	<?php }else{header("Location: ../index.php");}?>
 	<?php if(isset($message)) {
 		echo $message;
 	} ?>
@@ -64,7 +65,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=lerouge;charset=utf8', 'root', '');
 								'nom' => $nom,
 								'mail' => $mail,
 								'mdp' => $pass_hache));
-								echo "felicitation".$_POST['nom']."votre compte est cré(e), veuillez vous connecter dès maintenant".'<a href="connexion.php"> connexion </a>';
+								echo "Félicitation un compte pour".$_POST['nom'].' est ajouté, connectez-vous dès maintenant<a href="index.php"> connexion </a>';
 
 							}else{echo "les mots de passes ne correspondent pas";}
 

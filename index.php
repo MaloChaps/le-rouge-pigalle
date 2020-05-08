@@ -83,16 +83,24 @@
 	<div class="landing-section">
 
 		<div class="upcoming-section">
+			<?php
+			include('admin/connexion.php');
+			$reponse = $bdd->query('SELECT * FROM upcoming ORDER BY id DESC LIMIT 1');
+			while ($donnees = $reponse->fetch())
+			{?>
 			<h2 id="title-upcoming" class="h1">Upcoming<br> event.</h2>
 			<div id="line-upcoming" class="full-line"></div>
 			<section>
 				<div id="subtitle-upcoming"><p class="h4" >what happened this week<hr class="little-line"></p></div>
-				<article id="paragraphe-upcoming" class="paragraphe">All parties are postponed at Le Rouge until further notice. Stay tuned & be safe.</article>
+				<article id="paragraphe-upcoming" class="paragraphe">
+					<?php echo $donnees['event'] ?>
+				</article>
 				<div id="btn-upcoming" class="btn-upcoming">
 					<a href="mailto:paul.sery@laposte.net" ><button class="button-classic">booking</button></a>
-					<a href="https://www.instagram.com/p/B92Mnc4KNtA/" target="_blanck" class="cta">event <img src="public/img/component/arrow-line.svg" alt="information suivante"></a>
+					<a href="<?php echo $donnees['lien'] ?>" target="_blanck" class="cta">event <img src="public/img/component/arrow-line.svg" alt="information suivante"></a>
 				</div>
 			</section>
+		<?php }?>
 		</div>
 
 		<div class="video-section">
@@ -200,87 +208,42 @@
 			</div>
 			
 			<section class="friends-content">
+				<?php
+			include('admin/connexion.php');
+			$reponse = $bdd->query('SELECT * FROM box_ ORDER BY id DESC LIMIT 1');
+			while ($donnees = $reponse->fetch())
+			{?>
 				<article>
-					<p class="h6">Artistes</p>
+					<p class="h6"><?php echo $donnees['titre1']?></p>
 					<p class="paragraphe-2">
-						<a href="#">create, </a>
-						<a href="#">dorion, </a>
-						<a href="#">livoo, </a>
-						<a href="#">Lorkestra, </a>
-						<a href="#">jayweather, </a>
-						<a href="#">The boo, </a>
-						<a href="#">Toni, </a>
-						<a href="#">Vegas, </a>
-						<a href="#">Pepper, </a>
-						<a href="#">Toni Goodguy, </a>
-						<a href="#"> Moox,</a>
-						<a href="#">kiss, </a>
-						<a href="#">Mayl</a>
+						<?php echo $donnees['text1']?>
 					</p>
 				</article>
 
 				<article>
-					<p class="h6">Food</p>
+					<p class="h6"><?php echo $donnees['titre2']?></p>
 					<p class="paragraphe-2">
-						<a href="#">create, </a>
-						<a href="#">dorion, </a>
-						<a href="#">livoo, </a>
-						<a href="#">Lorkestra, </a>
-						<a href="#">jayweather, </a>
-						<a href="#">The boo, </a>
-						<a href="#">Toni, </a>
-					
-						<a href="#">Vegas, </a>
-						<a href="#">Pepper, </a>
-						<a href="#">Toni Goodguy, </a>
-						<a href="#"> Moox,</a>
-						<a href="#">kiss, </a>
-						<a href="#">Mayl egas, </a>
-						<a href="#">Pepper, </a>
-						<a href="#">Toni Goodguy,</a>
-						<a href="#"> Moox,</a>
-						<a href="#">kiss, </a>
-						<a href="#">Mayl</a>
+						<?php echo $donnees['text2']?>
 					</p>
 				</article>
 
 				<article>
-					<p class="h6">Shop</p>
+					<p class="h6"><?php echo $donnees['titre3']?></p>
 					<p class="paragraphe-2">
-						<a href="#">create, </a>
-						<a href="#">dorion, </a>
-						<a href="#">livoo, </a>
-						<a href="#">Lorkestra, </a>
-						<a href="#">jayweather, </a>
-						<a href="#">The boo, </a>
-						<a href="#">Toni, </a>
-						<a href="#">Vegas, </a>
-						<a href="#">Pepper, </a>
-						<a href="#">Toni Goodguy, </a>
-						<a href="#"> Moox,</a>
-						<a href="#">kiss, </a>
-						<a href="#">Mayl</a>
+						<?php echo $donnees['text3']?>
 					</p>
 				</article>
 
 				<article>
-					<p class="h6">Hotels</p>
+					<p class="h6"><?php echo $donnees['titre4']?></p>
 					<p class="paragraphe-2">
-						<a href="#">create, </a>
-						<a href="#">dorion, </a>
-						<a href="#">livoo, </a>
-						<a href="#">Lorkestra, </a>
-						<a href="#">jayweather, </a>
-						<a href="#">The boo, </a>
-						<a href="#">Toni, </a>
-						<a href="#">Vegas, </a>
-						<a href="#">Pepper, </a>
-						<a href="#">Toni Goodguy, </a>
-						<a href="#"> Moox,</a>
-						<a href="#">kiss, </a>
-						<a href="#">Mayl</a>
+						<?php echo $donnees['text4']?>
 					</p>
 				</article>
+
+
+
+			<?php }?>
 			</section>
 		</div>
 

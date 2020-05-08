@@ -129,6 +129,18 @@ form div input{
 	transition: 0.3s ease;
 }
 
+input[type="text"]{
+font-size: 17px;
+font-family: Poppins-Regular;
+padding-left: 10px;
+}
+
+textarea{
+font-size: 17px;
+font-family: Poppins-Regular;
+padding-left: 10px;
+padding-top: 10px;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
 
@@ -138,6 +150,10 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 120px;
+}
+
+label{
+	margin-bottom: 25px;
 }
 
 header a {
@@ -162,4 +178,34 @@ form {
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+
+
+.send{
+	width: 100%;
+	height: 10vh;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+input[type="text"]{
+font-size: 35px;
+font-family: Poppins-Regular;
+padding-left: 20px;
+height: 7vh;
+}
+
+input[type="submit"]{
+font-size: 35px;
+font-family: Poppins-Regular;
+}
+textarea{
+font-size: 35px;
+font-family: Poppins-Regular;
+padding-left: 20px;
+padding-top: 20px;
+}
+
+
 }
