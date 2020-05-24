@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Le Rouge Pigalle</title>
+	<title>Le Rouge Pigalle | Paris Pigalle</title>
 	<meta charset="utf-8">
 	<link rel="icon" href="public/img/component/favicon.png"/>
+
+	<link rel="apple-touch-icon" href="public/img/component/favicon.png">
+	<meta property="og:url" content="http://lerougepigalle.com">
+	<meta property="og:title" content="Le Rouge Pigalle | Paris Pigalle">
+	<meta property="og:description" content="Le Rouge. A building dating back over a hundred years, classified as a historic building, first a theater or cabaret, then a place to live or a club, an experience out of time">
+	<meta property="og:image" content="http://lerougepigalle.com/public/img/component/couv.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="http://lerougepigalle.com">
+    <meta name="twitter:title" content="Le Rouge Pigalle | Paris Pigalle">
+    <meta name="twitter:description" content="Le Rouge. A building dating back over a hundred years, classified as a historic building, first a theater or cabaret, then a place to live or a club, an experience out of time">
+    <meta name="twitter:image" content="http://lerougepigalle.com/public/img/component/couv.png">
+     <meta name="description" content="Le Rouge. A building dating back over a hundred years, classified as a historic building, first a theater or cabaret, then a place to live or a club, an experience out of time">
 
 	<!-- css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -44,8 +56,8 @@
 			</div>
 
 			<div class="langue-header">
-				<a href="fr/index.php">fr</a>
-				<a href="index.php">en</a>
+				<a href="fr" style="color: #A5A5A5">fr</a>
+				<a href="home" style="color: #ffff">en</a>
 			</div>
 	</header>
 
@@ -56,8 +68,8 @@
 			</div>
 
 			<div class="langue-header-mobile">
-				<a href="fr/index.php" style="color: #A5A5A5">fr</a>
-				<a href="index.php">en</a>
+				<a href="fr" style="color: #A5A5A5">fr</a>
+				<a href="home" style="color: #ffff">en</a>
 			</div>
 		</div>
 
@@ -96,7 +108,7 @@
 					<?php echo $donnees['event'] ?>
 				</article>
 				<div id="btn-upcoming" class="btn-upcoming">
-					<a href="mailto:paul.sery@laposte.net" ><button class="button-classic">booking</button></a>
+					<a href="tel:+33617697362" ><button class="button-classic">booking</button></a>
 					<a href="<?php echo $donnees['lien'] ?>" target="_blanck" class="cta">event <img src="public/img/component/arrow-line.svg" alt="information suivante"></a>
 				</div>
 			</section>
@@ -107,7 +119,7 @@
 			<div class="full-video">
 				<div class="full-video-content">
 					<i id="play-btn"  onclick="playVid()" class="fas fa-play"></i>
-					<video id="video-rouge" autoplay="" loop="" muted="">
+					<video id="video-rouge" autoplay="" loop="" muted="" poster="public/videos/videocouv.gif">
 						<source src="public/videos/video-rouge.mp4" type="video/mp4">
 						<source src="public/videos/video-rouge.webm" type="video/webm">
 					</video>
@@ -169,6 +181,7 @@
 				<article><p class="img-title">“You know you look so good tonight”</p></article>
 				<div class="love-parallax" id="parallax"></div>
 			</section>
+			<a href="https://www.instagram.com/je_t_aime_party/" target="_blanck" class="cta">More info</a>
 		</div>
 
 		
@@ -179,20 +192,20 @@
 
 			<section>
 				<article>
-					<a href="mailto:paul.sery@laposte.net"><button class="button-classic">booking</button></a>
 					<p class="img-title">“Red and sulphurous night in the heart of Pigalle”</p>
+					<a href="tel:+33617697362"><button class="button-classic">booking</button></a>
 				</article>
 					<div class="red-parallax" id="parallax"></div>
 			</section>
 		</div>
 
 		<div class="audit-section">
-			<h2 id="title-upcoming" class="h1">Audit &<br>collaboration.</h2>
+			<h2 id="title-upcoming" class="h1">Audit &<br>collab.</h2>
 			<div id="line-upcoming" class="full-line"></div>
 
 			<section class="audit-content">
 				<article>
-					<a href="mailto:@laposte.net"><button class="button-classic">Contact</button></a>
+					<a href="mailto:paul.sery@laposte.net"><button class="button-classic">Contact</button></a>
 				</article>
 					<div class="audit-parallax" id="parallax"></div>
 				

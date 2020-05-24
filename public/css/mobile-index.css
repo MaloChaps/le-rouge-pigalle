@@ -62,15 +62,16 @@
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    background: white;
-    color: #151515;
+    background: transparent;
+    color: #ffffff;
     /* padding: 15px 50px 15px 50px; */
-    width: 300px;
+    width: 280px;
     height: 100px;
     border: none;
     border-radius: 70px;
     text-decoration: none;
-  }
+    border: solid white 2px;
+}
 
 
 /*header //////////////////////////////////// header*/
@@ -331,6 +332,10 @@
      background-image: url('../img/loveparty/jtm-mobile.png');
  }
 
+ .love-content{
+    margin-bottom: 50px;
+ }
+
  .love-content article p{
     text-transform: uppercase;
     padding: 0px 40px 0px 40px;
@@ -347,6 +352,10 @@
   /*red-is yours  ////////////////////////////////red-is yours*/
 .red-section{
     margin-bottom: 100px;
+}
+
+.red-section article p{
+    margin-bottom: 50px;
 }
 
 .red-parallax{
@@ -388,7 +397,7 @@
 }
 /*footer //////////////////////////////// footer */
 .footer-section{
-    height: 80vh;
+    height: 90vh;   
 }
 
 .footer-content {

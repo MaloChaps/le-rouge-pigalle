@@ -1,3 +1,4 @@
+
 /*font*/
 @font-face {
 	font-family: "Poppins-Regular";
@@ -177,9 +178,6 @@ body{
     display: -ms-flexbox;
     display: flex;
     width: 50%;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
     color: #FFFFFF;
     -webkit-transition: 0.2s ease;
     -o-transition: 0.2s ease;
@@ -247,11 +245,9 @@ body{
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
-	background: white;
-	color: #151515;
-	/*padding: 15px 50px 15px 50px;*/
-	width: 145px;
-    height: 45px;
+		/*padding: 15px 50px 15px 50px;*/
+	width: 120px;
+    height: 40px;
 	border: none;
 	border-radius: 50px;
 	text-decoration: none;
@@ -260,15 +256,20 @@ body{
 	transition: 0.4s ease;
 	cursor: pointer;
 	border: solid white 2px;
+	background: transparent;
+	color: white;
+
 }
+
+
 
 .button-classic:hover{
 	-webkit-transition: 0.4s ease;
 	-o-transition: 0.4s ease;
 	transition: 0.4s ease;
-	color: white;
+	color: #151515;
 	border: solid white 2px;
-	background: transparent;
+	background: white;
 
 }
 
@@ -533,15 +534,18 @@ body{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	        -webkit-box-align: center;
+	            -ms-flex-align: center;
+	                align-items: center;
 }
 
 .btn-upcoming a{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 .btn-upcoming img{
@@ -679,14 +683,37 @@ body{
 .love-section{
 	margin-bottom: 50px;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .love-content{
 	position: relative;
+	margin-bottom: 25px;
+}
+
+.love-section a{
+	-webkit-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+
+.love-section a:hover{
+	text-decoration: underline;
+	-webkit-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
 }
 
 .love-content article p{
-	text-transform: lowercase;
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -699,7 +726,6 @@ body{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-
 }
 
 .love-parallax{
@@ -771,7 +797,7 @@ body{
 	height: 100%;
 }
 
-.red-section article a{
+.red-section article p{
 	margin-bottom: 25px;
 }
 

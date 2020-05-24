@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://lerougepigalle.com/$1 [R=301,L]
+
+
+RewriteRule ^home$ /index.php [L]
+RewriteRule ^fr$ /fr.php [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) /errordocument.html
+
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php
+
+RemoveType x-mapp-php4 .html
